@@ -1,3 +1,8 @@
+import mongoose from "mongoose";
+
+const CONNECTION_STRING = 'mongodb+srv://pasamj:Rishita1@cluster0.puno2qv.mongodb.net/triter?retryWrites=true&w=majority'  || 'mongodb://127.0.0.1:27017/tuiter'
+mongoose.connect(CONNECTION_STRING);
+
 import express from 'express';
 import cors from 'cors';
 import HelloController
